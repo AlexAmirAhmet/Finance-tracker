@@ -1,0 +1,110 @@
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 6px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.tabActive {
+  background: var(--text);
+  color: var(--accent);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  border-radius: var(--radius-md);
+  padding: 16px 16px;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.person {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.amount {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 9px;
+  border-radius: 8px;
+}
+
+.badgeOpen {
+  background: rgba(28, 28, 30, 0.06);
+  color: #55585a;
+}
+
+.badgePartial {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.badgeClosed {
+  background: rgba(46, 160, 67, 0.12);
+  color: #2e7d32;
+}
+
+.due {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.progressTrack {
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+}

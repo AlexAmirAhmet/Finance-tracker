@@ -1,0 +1,21 @@
+.wrap {
+  text-align: center;
+  padding: 36px 20px;
+  color: var(--text-secondary);
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 20px;
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+.text {
+  font-size: 13px;
+  font-weight: 600;
+}
