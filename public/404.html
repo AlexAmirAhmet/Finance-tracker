@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Финансовый трекер</title>
+    <script>
+      // GitHub Pages has no server-side routing, so an unknown path (e.g. a
+      // deep link or a reload on a sub-route) lands here. Re-encode it into
+      // a query string and redirect to the app root, where index.html's
+      // inline script decodes it back into the real path.
+      // https://github.com/rafgraph/spa-github-pages
+      var pathSegmentsToKeep = 1 // "/Finance-tracker"
+      var l = window.location
+      l.replace(
+        l.protocol +
+          '//' +
+          l.hostname +
+          (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') +
+          '/?/' +
+          l.pathname
+            .slice(1)
+            .split('/')
+            .slice(pathSegmentsToKeep)
+            .join('/')
+            .replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+      )
+    </script>
+  </head>
+  <body></body>
+</html>
